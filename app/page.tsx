@@ -37,7 +37,7 @@ export default function HomePage() {
           <div className="justify-self-center">
             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border">
               <Image
-                src="/avatar.jpg"
+                src="/avatar.png"
                 alt="Hubert Matras"
                 fill
                 className="object-cover"

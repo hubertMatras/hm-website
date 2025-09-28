@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-[160px,1fr] gap-6 items-start">
         <div className="relative h-40 w-40 rounded-2xl overflow-hidden border">
           <Image
-            src="/avatar.jpg"
+            src="/avatar.png"
             alt="Hubert Matras"
             fill
             className="object-cover"
