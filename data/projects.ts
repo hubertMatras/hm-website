@@ -15,4 +15,4 @@ export const projects = [
     tech: ["React", "MDX", "styled-components"],
     repo: "https://github.com/hubert-matras/a11y-checklist",
   },
-] as const;
+];
