@@ -13,7 +13,7 @@ const links = [
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800/60">
-      <nav className="container flex h-14 items-center justify-between">
+      <nav className="max-w-none w-full px-4 flex h-14 items-center justify-between">
         <Link href="/" className="font-semibold">
           HM
         </Link>

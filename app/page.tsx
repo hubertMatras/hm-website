@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="container py-20 md:py-28">
+      <section className="max-w-none w-full px-4 py-20 md:py-28">
         <div className="grid md:grid-cols-2 items-center gap-10">
           <div>
             <h1 className="h1">Hubert Matras</h1>

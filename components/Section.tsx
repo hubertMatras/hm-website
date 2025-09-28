@@ -12,7 +12,7 @@ export default function Section({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="container py-12 md:py-16">
+    <section id={id} className="max-w-none w-full px-4 py-12 md:py-16">
       <div className="mb-6">
         <h2 className="h2">{title}</h2>
         {description && <p className="mt-2 muted max-w-2xl">{description}</p>}
