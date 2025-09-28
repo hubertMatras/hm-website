@@ -7,7 +7,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
+        {/* Hero */}
       <section className="max-w-none w-full px-4 py-20 md:py-28">
         <div className="grid md:grid-cols-2 items-center gap-10">
           <div>
