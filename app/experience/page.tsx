@@ -54,8 +54,8 @@ export default function ExperiencePage() {
             ))}
           </ul>
           <a
-            href="/Hubert-Matras-Resume.pdf"
-            className="inline-flex mt-4 items-center rounded-xl bg-brand px-4 py-2 text-white hover:bg-brand-600"
+            href="/Hubert_Matras_Resume.pdf"
+            className="inline-flex mt-4 items-center rounded-xl bg-brand px-4 py-2 hover:bg-brand-600"
           >
             Download resume (PDF)
           </a>

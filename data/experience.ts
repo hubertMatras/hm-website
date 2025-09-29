@@ -4,6 +4,7 @@ export const education = [
     org: "Swansea University",
     start: "2021",
     end: "2024",
+    image: "/og-image.png",
   },
 ];
 
