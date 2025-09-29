@@ -4,15 +4,24 @@ export const projects = [
     description:
       "This site – built with Next.js, TypeScript, Tailwind, and deployed to Vercel.",
     tech: ["Next.js", "TypeScript", "TailwindCSS"],
-    repo: "https://github.com/hubert-matras/portfolio",
+    repo: "https://github.com/hubertMatras/hm-website",
     demo: "https://your-vercel-url.vercel.app",
     image: "/og-image.png",
   },
   {
-    title: "Accessibility Checklist",
+    title: "Tic-Tac-Toe",
     description:
-      "MDX-driven checklist with custom React components and styled-components.",
-    tech: ["React", "MDX", "styled-components"],
-    repo: "https://github.com/hubert-matras/a11y-checklist",
+      "A simple Tic-Tac-Toe game built with React.",
+    tech: ["React", "JavaScript", "CSS"],
+    repo: "https://github.com/hubertMatras/tic-tac-toe",
+    image: "/ticTacToe.png",
+  },
+  {
+    title: "Mortgage Calculator",
+    description:
+      "A simple mortgage calculator built with React.",
+    tech: ["React", "JavaScript", "CSS"],
+    repo: "https://github.com/hubertMatras/mortgage-calculator",
+    image: "/mortgage.webp",
   },
 ];
