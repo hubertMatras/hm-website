@@ -1,5 +1,6 @@
 import Section from "../../components/Section";
 import { education, work, certifications } from "../../data/experience";
+import Image from "next/image";
 
 export default function ExperiencePage() {
   return (
@@ -37,6 +38,7 @@ export default function ExperiencePage() {
                 <p className="muted">
                   {e.org} • {e.start} – {e.end}
                 </p>
+                <Image src={e.image} alt={e.title} width={400} height={200} className="mt-2 rounded-lg" />
               </li>
             ))}
           </ul>
