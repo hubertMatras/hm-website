@@ -12,7 +12,7 @@ export default function HomePage() {
         title="Featured Projects"
         description="A few things I've been working on recently."
       >
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
           {projects.slice(0, 3).map((p) => (
             <ProjectCard key={p.title} {...p} />
           ))}

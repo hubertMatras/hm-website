@@ -30,7 +30,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-center bg-slate-50">
+      <div className="flex p-5 items-center justify-center bg-slate-50">
         <div className="relative aspect-[3/4] w-3/5 rounded-xl overflow-hidden shadow-lg">
           <Image
             src="/avatar.png"
