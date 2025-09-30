@@ -1,6 +1,5 @@
 import Section from "../components/Section";
-import { projects } from "../data/projects";
-import { techStack } from "../data/tech-stack";
+import { projects, techStack } from '../data';
 import ProjectCard from "../components/ProjectCard";
 import Hero from "../components/Hero";
 

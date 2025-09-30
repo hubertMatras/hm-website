@@ -1,5 +1,5 @@
 import Section from "../../components/Section";
-import { education, work, certifications } from "../../data/experience";
+import { education, work, certifications } from "../../data";
 import Image from "next/image";
 
 export default function ExperiencePage() {

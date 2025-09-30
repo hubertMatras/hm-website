@@ -1,5 +1,5 @@
 import Section from "../../components/Section";
-import { projects } from "../../data/projects";
+import { projects } from "../../data";
 import ProjectCard from "../../components/ProjectCard";
 
 export default function ProjectsPage() {
