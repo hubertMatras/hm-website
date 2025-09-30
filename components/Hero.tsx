@@ -18,13 +18,13 @@ export default function Hero() {
         <div className="mt-8 flex gap-4">
           <Link
             href="/projects"
-            className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-200"
+            className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
           >
             View my work
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-200"
+            className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
           >
             Contact me
           </Link>
