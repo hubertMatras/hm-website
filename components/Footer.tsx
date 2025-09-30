@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { GitHubIcon } from "../icons/github";
-import { LinkedInIcon } from "../icons/linkedIn";
+import { GitHubIcon, LinkedInIcon } from "../icons";
 
 export default function Footer() {
   return (
