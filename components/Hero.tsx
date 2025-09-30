@@ -4,41 +4,40 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="max-w-none w-full px-4 py-20 md:py-28">
-      <div className="grid md:grid-cols-2 items-center gap-10">
-        <div>
-          <h1 className="h1">Hubert Matras</h1>
-          <p className="mt-3 text-lg text-slate-600">
-            Software Engineer
-          </p>
-          <p className="mt-4 max-w-prose muted">
-            I build accessible, performant web apps with React, Next.js, and
-            TypeScript.
-          </p>
-          <div className="mt-6 flex gap-3">
-            <Link
-              href="/projects"
-              className="inline-flex items-center rounded-xl border px-4 py-2 hover:bg-slate-200"
-            >
-              View my work
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center rounded-xl border px-4 py-2 hover:bg-slate-200"
-            >
-              Contact me
-            </Link>
-          </div>
+    <section className="w-full h-screen grid gap-4 md:grid-cols-2">
+      <div className="flex flex-col items-center justify-center px-8 md:px-16 bg-white">
+        <h1 className="text-3xl md:text-5xl font-bold text-center">
+          From a professional Footballer to a Software Engineer
+          <br />
+          <br />I am <span className="text-blue-600">Hubert</span>
+        </h1>
+        <p className="mt-6 text-lg text-slate-600 max-w-prose">
+          I build accessible, performant web apps with React, Next.js, and
+          TypeScript.
+        </p>
+        <div className="mt-8 flex gap-4">
+          <Link
+            href="/projects"
+            className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-200"
+          >
+            View my work
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-200"
+          >
+            Contact me
+          </Link>
         </div>
-        <div className="justify-self-center">
-          <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-xl overflow-hidden border">
-            <Image
-              src="/avatar.png"
-              alt="Hubert Matras"
-              fill
-              className="object-cover"
-            />
-          </div>
+      </div>
+      <div className="flex items-center justify-center bg-slate-50">
+        <div className="relative aspect-[3/4] w-3/5 rounded-xl overflow-hidden shadow-lg">
+          <Image
+            src="/avatar.png"
+            alt="Hubert Matras"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
