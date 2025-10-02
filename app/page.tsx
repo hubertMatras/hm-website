@@ -1,4 +1,4 @@
-import { AboutMe, Experience, Hero, Projects} from '../components';
+import { AboutMe, Experience, Hero, Projects } from "../components";
 
 export default function HomePage() {
   return (
