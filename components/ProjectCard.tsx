@@ -1,71 +1,37 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ProjectCard({
   title,
-  description,
-  tech,
-  repo,
-  demo,
+  tagline,
   image,
+  onClick,
 }: {
   title: string;
-  description: string;
-  tech: string[];
-  repo?: string;
-  demo?: string;
+  tagline: string;
   image?: string;
+  onClick?: () => void;
 }) {
   return (
-    <>
-      {repo && (
-        <Link href={repo} target="_blank" className="no-underline">
-          <div className="card flex flex-col ">
-            {image && (
-              <div className="relative aspect-[16/9] mb-4 overflow-hidden rounded-xl bg-slate-100">
-                <Image
-                  src={image}
-                  alt={title}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            )}
-            <h3 className="font-semibold text-lg">{title}</h3>
-            <p className="mt-2 text-sm muted">{description}</p>
-            <ul className="flex flex-wrap gap-2 mt-3">
-              {tech.map((t) => (
-                <li
-                  key={t}
-                  className="text-xs px-2 py-1 rounded-full border border-blue-600"
-                >
-                  {t}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-4 flex gap-3">
-              {repo && (
-                <Link
-                  className="text-sm hover:underline"
-                  href={repo}
-                  target="_blank"
-                >
-                  GitHub
-                </Link>
-              )}
-              {demo && (
-                <Link
-                  className="text-sm hover:underline"
-                  href={demo}
-                  target="_blank"
-                >
-                  Live demo
-                </Link>
-              )}
-            </div>
+    <div
+      onClick={onClick}
+      className="block cursor-pointer"
+    >
+      <div className="group card flex flex-col items-center rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        {image && (
+          <div className="relative aspect-[16/9] w-full">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover"
+            />
           </div>
-        </Link>
-      )}
-    </>
+        )}
+        <div className="p-4 text-center">
+          <h3 className="font-semibold text-lg">{title}</h3>
+          <p className="text-sm text-gray-500">{tagline}</p>
+        </div>
+      </div>
+    </div>
   );
 }
