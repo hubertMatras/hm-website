@@ -49,9 +49,15 @@ export default function RootLayout({
       <body
        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="flex flex-col h-screen">
+          {/* Fixed Header */}
           <Header />
-          <main className="min-h-[70vh]">{children}</main>
-          <Footer />
+          
+          {/* Main Content Area */}
+          <main className="flex-1 overflow-hidden">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

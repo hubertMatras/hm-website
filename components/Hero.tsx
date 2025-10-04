@@ -1,11 +1,12 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
+import Footer from "./Footer";
 
 export default function Hero() {
   return (
-    <section className="w-full h-screen grid gap-4 md:grid-cols-2">
-      <div className="flex flex-col items-center justify-center px-8 md:px-16 bg-white">
+    <section className="w-full h-full flex flex-col">
+      {/* Main Hero Content */}
+      <div className="flex-1 flex flex-col items-center justify-center px-8 md:px-16">
         <h1 className="text-3xl md:text-5xl font-bold text-center">
           From a professional Footballer to a Software Engineer
           <br />
@@ -30,15 +31,10 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="flex p-5 items-center justify-center bg-slate-50">
-        <div className="relative aspect-[3/4] w-3/5 rounded-xl overflow-hidden shadow-lg">
-          <Image
-            src="/avatar.png"
-            alt="Hubert Matras"
-            fill
-            className="object-cover"
-          />
-        </div>
+      
+      {/* Footer at Bottom */}
+      <div className="mt-auto">
+        <Footer />
       </div>
     </section>
   );
