@@ -18,11 +18,10 @@ export default function Experience() {
       <div className="max-w-4xl mx-auto w-full space-y-6">
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Work Experience</h2>
-          {work.map((w, index) => (
+          {work.map((w) => (
             <Accordion
               key={w.title}
               title={`${w.title} at ${w.org}`}
-              defaultOpen={index === 0}
             >
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -77,7 +76,7 @@ export default function Experience() {
             </Accordion>
           ))}
         </div>
-        
+
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Certifications</h2>
           <Accordion title="Professional Certifications">
