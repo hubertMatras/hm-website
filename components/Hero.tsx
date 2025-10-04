@@ -1,12 +1,10 @@
 "use client";
-import Link from "next/link";
 import Footer from "./Footer";
 
 export default function Hero() {
   return (
-    <section className="w-full h-full flex flex-col">
-      {/* Main Hero Content */}
-      <div className="flex-1 flex flex-col items-center justify-center px-8 md:px-16">
+    <section className="w-full h-full grid grid-rows-[1fr_auto]">
+      <div className="flex flex-col items-center justify-center px-8 md:px-16">
         <h1 className="text-3xl md:text-5xl font-bold text-center">
           From a professional Footballer to a Software Engineer
           <br />
@@ -17,25 +15,31 @@ export default function Hero() {
           TypeScript.
         </p>
         <div className="mt-8 flex gap-4">
-          <Link
-            href="/projects"
+          <button
+            onClick={() => {
+              const element = document.querySelector('#projects');
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
           >
-            View my work
-          </Link>
-          <Link
-            href="/contact"
+            View My Work
+          </button>
+          <button
+            onClick={() => {
+              const element = document.querySelector('#contact');
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
           >
-            Contact me
-          </Link>
+            Contact Me
+          </button>
         </div>
       </div>
-      
-      {/* Footer at Bottom */}
-      <div className="mt-auto">
-        <Footer />
-      </div>
+      <Footer />
     </section>
   );
 }

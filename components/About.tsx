@@ -12,7 +12,7 @@ export default function AboutMe() {
           About Me
         </h1>
       </div>
-      <div className="grid gap-8 md:grid-cols-2 w-full items-start">
+      <div className="grid gap-8 md:grid-cols-1 w-full items-start">
         <div className="space-y-4 leading-relaxed text-slate-700">
           <p>
             I’m a dedicated and creative Software Engineer with a degree in

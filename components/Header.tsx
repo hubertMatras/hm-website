@@ -5,10 +5,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/experience", label: "Experience" },
-  { href: "/contact", label: "Contact" },
+  { href: "#about", label: "Home" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -20,6 +20,17 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    closeMenu();
   };
 
   return (
@@ -39,12 +50,12 @@ export default function Header() {
           <ul className="hidden md:flex items-center gap-4 text-sm">
             {links.map((l) => (
               <li key={l.href}>
-                <Link
-                  className="hover:underline underline-offset-4"
-                  href={l.href}
+                <button
+                  className="hover:underline underline-offset-4 cursor-pointer"
+                  onClick={() => scrollToSection(l.href)}
                 >
                   {l.label}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
@@ -64,13 +75,12 @@ export default function Header() {
           <ul className="px-4 py-2 space-y-1">
             {links.map((l) => (
               <li key={l.href}>
-                <Link
-                  className="block px-3 py-2 text-sm text-slate-900 hover:bg-slate-200 rounded-md transition-colors"
-                  href={l.href}
-                  onClick={closeMenu}
+                <button
+                  className="block px-3 py-2 text-sm text-slate-900 hover:bg-slate-200 rounded-md transition-colors w-full text-left"
+                  onClick={() => scrollToSection(l.href)}
                 >
                   {l.label}
-                </Link>
+                </button>
               </li>
             ))}
           </ul>
