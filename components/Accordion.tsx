@@ -18,7 +18,7 @@ export default function Accordion({ title, children, defaultOpen = false }: Acco
     <div className="border border-gray-200 rounded-lg overflow-hidden ">
       <button
         onClick={toggleAccordion}
-        className="w-full px-4 py-3 text-left bg-blue hover:bg-blue-300 flex items-center justify-between transition-colors"
+        className="w-full px-4 py-3 text-left bg-beige hover:bg-beige/80 flex items-center justify-between transition-colors"
         aria-expanded={isOpen}
       >
         <span className="font-bold text-lg">{title}</span>
@@ -44,7 +44,7 @@ export default function Accordion({ title, children, defaultOpen = false }: Acco
           isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-4 bg-light-blue">
+        <div className="p-4 bg-cream">
           {children}
         </div>
       </div>
