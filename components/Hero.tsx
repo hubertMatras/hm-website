@@ -4,12 +4,12 @@ import Footer from "./Footer";
 export default function Hero() {
   return (
     <section className="w-full h-full grid grid-rows-[1fr_auto]">
-      <div className="flex flex-col items-center justify-center px-8 md:px-16">
-        <h1 className="text-3xl md:text-5xl font-bold text-center">
+      <div className="flex flex-col items-center justify-center px-8 lg:px-16">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center">
           FROM A PROFESSIONAL FOOTBALLER TO A SOFTWARE ENGINEER
           <br />
         </h1>
-        <h1 className="text-3xl md:text-5xl font-bold text-center">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center">
           <br />I am <span className="text-blue-600">HUBERT</span>
         </h1>
         <div className="mt-8 flex gap-4">
