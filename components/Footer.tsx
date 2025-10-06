@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedInIcon } from "../icons";
 
 export default function Footer() {
   return (
-    <footer className="px-4 py-6 flex flex-col lg:flex-row items-center justify-center gap-4">
+    <footer className="px-4 py-6 flex flex-col items-center justify-between gap-4 lg:border-t-1 lg:border-slate-300 lg:flex-row">
       <p className="text-sm muted">
         © {new Date().getFullYear()} Hubert Matras
       </p>

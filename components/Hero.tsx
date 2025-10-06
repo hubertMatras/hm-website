@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function Hero() {
   return (
     <section className="w-full h-full grid grid-rows-[1fr_auto]">
-      <div className="flex flex-col items-center justify-center px-8 lg:px-16">
+      <div className="flex flex-col items-center justify-center px-4">
         <h1 className="text-3xl lg:text-5xl font-bold text-center">
           FROM A PROFESSIONAL FOOTBALLER TO A SOFTWARE ENGINEER
           <br />
