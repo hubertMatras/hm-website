@@ -3,10 +3,10 @@
 export default function Contact() {
   return (
     <div className="max-w-2xl w-full">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">
         Get In Touch
       </h2>
-      <p className="text-lg text-gray-600 text-center mb-8">
+      <p className="text-lg muted text-center mb-8">
         I'm always interested in new opportunities and interesting projects.
         Feel free to reach out if you'd like to work together!
       </p>

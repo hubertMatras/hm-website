@@ -34,7 +34,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/80 border-b border-slate-200/60">
+    <header className="sticky top-0 z-50 backdrop-blur bg-beige border-b border-slate-200/60">
       <nav className="max-w-none w-full px-4 flex h-18 items-center justify-between">
         <Link href="/" className="font-semibold">
           <Image

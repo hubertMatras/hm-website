@@ -8,16 +8,14 @@ export default function Hero() {
         <h1 className="text-3xl md:text-5xl font-bold text-center">
           From a professional Footballer to a Software Engineer
           <br />
+        </h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-center">
           <br />I am <span className="text-blue-600">Hubert</span>
         </h1>
-        <p className="mt-6 text-lg text-slate-600 max-w-prose">
-          I build accessible, performant web apps with React, Next.js, and
-          TypeScript.
-        </p>
         <div className="mt-8 flex gap-4">
           <button
             onClick={() => {
-              const element = document.querySelector('#projects');
+              const element = document.querySelector("#projects");
               if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
               }
@@ -28,7 +26,7 @@ export default function Hero() {
           </button>
           <button
             onClick={() => {
-              const element = document.querySelector('#contact');
+              const element = document.querySelector("#contact");
               if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
               }

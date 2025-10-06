@@ -15,13 +15,13 @@ export default function Accordion({ title, children, defaultOpen = false }: Acco
   };
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <div className="border border-gray-200 rounded-lg overflow-hidden ">
       <button
         onClick={toggleAccordion}
-        className="w-full px-4 py-3 text-left bg-gray-50 hover:bg-gray-100 flex items-center justify-between transition-colors"
+        className="w-full px-4 py-3 text-left bg-blue hover:bg-blue-300 flex items-center justify-between transition-colors"
         aria-expanded={isOpen}
       >
-        <span className="font-medium text-lg">{title}</span>
+        <span className="font-bold text-lg">{title}</span>
         <svg
           className={`w-5 h-5 transform transition-transform ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -44,7 +44,7 @@ export default function Accordion({ title, children, defaultOpen = false }: Acco
           isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-4 bg-white">
+        <div className="p-4 bg-light-blue">
           {children}
         </div>
       </div>
