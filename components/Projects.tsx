@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import Section from './Section';
 import Modal from "./Modal";
 import { projects } from "../data";
 
@@ -29,16 +30,15 @@ export default function Projects() {
   };
 
   return (
-    <div
+    <Section
       id="projects"
-      className="flex flex-col w-full px-20 py-12 md:py-16 max-w-none"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-600">
-          Projects
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+          PROJECTS
         </h1>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
         {projects.slice(0, 3).map((project) => (
           <ProjectCard
             key={project.title}
@@ -55,6 +55,6 @@ export default function Projects() {
         onClose={closeModal}
         project={selectedProject}
       />
-    </div>
+    </Section>
   );
 }

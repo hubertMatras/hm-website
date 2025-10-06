@@ -1,10 +1,13 @@
 "use client";
+import Section from './Section';
 
 export default function Contact() {
   return (
-    <div className="max-w-2xl w-full">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-8">
-        Get In Touch
+    <Section
+      id="contact"
+    >
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-8">
+        GET IN TOUCH
       </h2>
       <p className="text-lg muted text-center mb-8">
         I'm always interested in new opportunities and interesting projects.
@@ -26,6 +29,6 @@ export default function Contact() {
           View CV
         </a>
       </div>
-    </div>
+    </Section>
   );
 }

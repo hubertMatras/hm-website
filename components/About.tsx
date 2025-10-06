@@ -1,15 +1,15 @@
 "use client";
 import { techStack } from "../data";
+import Section  from "./Section"
 
 export default function AboutMe() {
   return (
-    <div
+    <Section
       id="about"
-      className="flex flex-col w-full px-4 py-12 md:py-16 max-w-none"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-600">
-          About Me
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+          ABOUT ME
         </h1>
       </div>
       <div className="grid gap-8 md:grid-cols-1 w-full items-start">
@@ -43,7 +43,7 @@ export default function AboutMe() {
         </div>
         <aside className="md:top-24">
           <div className="card rounded-2xl border p-5 shadow-sm">
-            <h3 className="font-semibold text-2xl text-center">Technologies</h3>
+            <h3 className="font-semibold text-2xl text-center text-blue-900">Technologies</h3>
 
             <div className="mt-5">
               <p className="text-lg font-bold">Proficient</p>
@@ -75,6 +75,6 @@ export default function AboutMe() {
           </div>
         </aside>
       </div>
-    </div>
+    </Section>
   );
 }

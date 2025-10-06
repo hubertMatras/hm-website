@@ -6,11 +6,11 @@ export default function Hero() {
     <section className="w-full h-full grid grid-rows-[1fr_auto]">
       <div className="flex flex-col items-center justify-center px-8 md:px-16">
         <h1 className="text-3xl md:text-5xl font-bold text-center">
-          From a professional Footballer to a Software Engineer
+          FROM A PROFESSIONAL FOOTBALLER TO A SOFTWARE ENGINEER
           <br />
         </h1>
         <h1 className="text-3xl md:text-5xl font-bold text-center">
-          <br />I am <span className="text-blue-600">Hubert</span>
+          <br />I am <span className="text-blue-600">HUBERT</span>
         </h1>
         <div className="mt-8 flex gap-4">
           <button

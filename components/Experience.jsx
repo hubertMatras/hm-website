@@ -1,17 +1,17 @@
 "use client";
 import Image from "next/image";
 import Accordion from "./Accordion";
+import Section from './Section';
 import { education, work, certifications } from "../data";
 
 export default function Experience() {
   return (
-    <div
+    <Section
       id="experience"
-      className="flex flex-col w-full px-4 py-12 md:py-16 max-w-none"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-600">
-          Experience
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+          EXPERIENCE
         </h1>
       </div>
       
@@ -104,6 +104,6 @@ export default function Experience() {
           </Accordion>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
