@@ -10,14 +10,14 @@ export default function Experience() {
       className="flex flex-col w-full px-4 py-12 md:py-16 max-w-none"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-600">
           Experience
         </h1>
       </div>
       
       <div className="max-w-4xl mx-auto w-full space-y-6">
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Work Experience</h2>
+        <div className="space-y-2">
+          <h2 className="text-xl font-semibold text-blue mb-4">Work Experience</h2>
           {work.map((w) => (
             <Accordion
               key={w.title}
@@ -47,7 +47,7 @@ export default function Experience() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Education</h2>
+          <h2 className="text-xl font-semibold text-blue mb-4">Education</h2>
           {education.map((e) => (
             <Accordion
               key={e.title}
@@ -78,7 +78,7 @@ export default function Experience() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-800 mb-4">Certifications</h2>
+          <h2 className="text-xl font-semibold text-blue mb-4">Certifications</h2>
           <Accordion title="Professional Certifications">
             <div className="space-y-4">
               {certifications.map((c) => (
