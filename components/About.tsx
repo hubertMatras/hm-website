@@ -43,7 +43,7 @@ export default function AboutMe() {
         </div>
         <aside className="md:top-24">
           <div className="card rounded-2xl border p-5 shadow-sm">
-            <h3 className="font-semibold text-2xl text-center text-blue-900">Technologies</h3>
+            <h3 className="font-bold text-2xl text-center text-blue-900">TECH STACK</h3>
 
             <div className="mt-5">
               <p className="text-lg font-bold">Proficient</p>

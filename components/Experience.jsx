@@ -17,7 +17,7 @@ export default function Experience() {
       
       <div className="max-w-4xl mx-auto w-full space-y-6">
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold text-blue mb-4">Work Experience</h2>
+          <h2 className="text-xl font-semibold text-blue-900 mb-4">Work Experience</h2>
           {work.map((w) => (
             <Accordion
               key={w.title}
@@ -47,7 +47,7 @@ export default function Experience() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-blue mb-4">Education</h2>
+          <h2 className="text-xl font-semibold text-blue-900 mb-4">Education</h2>
           {education.map((e) => (
             <Accordion
               key={e.title}
@@ -78,7 +78,7 @@ export default function Experience() {
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-blue mb-4">Certifications</h2>
+          <h2 className="text-xl font-semibold text-blue-900 mb-4">Certifications</h2>
           <Accordion title="Professional Certifications">
             <div className="space-y-4">
               {certifications.map((c) => (
