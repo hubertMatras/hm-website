@@ -6,17 +6,6 @@ const config: Config = {
         "./app/**/*.{ts,tsx}",
         "./components/**/*.{ts,tsx}",
     ],
-    theme: {
-        extend: {
-            container: { center: true, padding: "1rem" },
-            colors: {
-                brand: {
-                    DEFAULT: "#3b82f6",
-                    600: "#2563eb"
-                }
-            }
-        }
-    },
     plugins: [],
 };
 export default config;
