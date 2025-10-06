@@ -10,7 +10,7 @@ export default function Experience() {
       id="experience"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+        <h1 className="text-3xl font-bold text-center text-blue-900 md:text-4xl">
           EXPERIENCE
         </h1>
       </div>

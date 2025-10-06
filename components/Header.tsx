@@ -47,7 +47,7 @@ export default function Header() {
         </Link>
         
         <div className="flex items-center gap-2">
-          <ul className="hidden md:flex items-center gap-4 text-sm">
+          <ul className="hidden items-center gap-4 text-sm md:flex">
             {links.map((l) => (
               <li key={l.href}>
                 <button
@@ -62,7 +62,7 @@ export default function Header() {
           
           <button
             onClick={toggleMenu}
-            className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-900 hover:bg-slate-200 transition-colors"
+            className="inline-flex items-center justify-center p-2 rounded-md text-slate-900 hover:bg-slate-200 transition-colors md:hidden"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -71,7 +71,7 @@ export default function Header() {
       </nav>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t border-slate-200/60 bg-white backdrop-blur">
+        <div className="border-t border-slate-200/60 bg-white backdrop-blur md:hidden">
           <ul className="px-4 py-2 space-y-1">
             {links.map((l) => (
               <li key={l.href}>

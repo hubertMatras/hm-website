@@ -34,11 +34,11 @@ export default function Projects() {
       id="projects"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+        <h1 className="text-3xl font-bold text-center text-blue-900 md:text-4xl">
           PROJECTS
         </h1>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {projects.slice(0, 3).map((project) => (
           <ProjectCard
             key={project.title}

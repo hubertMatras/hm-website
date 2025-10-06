@@ -6,7 +6,7 @@ export default function Contact() {
     <Section
       id="contact"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-8">
+      <h2 className="text-3xl font-bold text-center text-blue-900 mb-8 md:text-4xl">
         GET IN TOUCH
       </h2>
       <p className="text-lg muted text-center mb-8">

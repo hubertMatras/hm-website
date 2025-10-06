@@ -8,11 +8,11 @@ export default function AboutMe() {
       id="about"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-900">
+        <h1 className="text-3xl font-bold text-center text-blue-900 md:text-4xl">
           ABOUT ME
         </h1>
       </div>
-      <div className="grid gap-8 md:grid-cols-1 w-full items-start">
+      <div className="grid gap-8 w-full items-start md:grid-cols-1">
         <div className="space-y-4 leading-relaxed text-slate-700">
           <p>
             I’m a dedicated and creative Software Engineer with a degree in

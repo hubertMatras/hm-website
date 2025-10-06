@@ -4,12 +4,12 @@ export default function HomePage() {
   return (
     <div className="flex flex-col lg:flex-row lg:h-full">
       <div
-        className="w-full lg:w-[40%] flex items-center bg-cream min-h-[100vh] lg:min-h-0 lg:h-full"
+        className="w-full flex items-center bg-cream min-h-[100vh] lg:w-[40%] lg:min-h-0 lg:h-full"
         id="home"
       >
         <Hero />
       </div>
-      <div className="w-full lg:w-[60%] lg:overflow-y-auto scroll-smooth">
+      <div className="w-full scroll-smooth lg:w-[60%] lg:overflow-y-auto">
         <AboutMe />
         <Experience />
         <Projects />
