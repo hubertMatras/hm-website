@@ -9,7 +9,7 @@ export default function HomePage() {
       >
         <Hero />
       </div>
-      <div className="w-full scroll-smooth lg:w-[60%] lg:overflow-y-auto">
+      <div className="w-full flex flex-col items-center scroll-smooth lg:w-[60%] lg:overflow-y-auto">
         <AboutMe />
         <Experience />
         <Projects />

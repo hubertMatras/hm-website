@@ -15,7 +15,7 @@ export default function Experience() {
         </h1>
       </div>
       
-      <div className="max-w-4xl mx-auto w-full space-y-6">
+      <div className="mx-auto w-full space-y-6">
         <div className="space-y-2">
           <h2 className="text-xl font-semibold text-blue-900 mb-4">Work Experience</h2>
           {work.map((w) => (
