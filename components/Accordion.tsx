@@ -2,49 +2,58 @@
 import { useState } from "react";
 
 interface AccordionProps {
-  title: string;
   children: React.ReactNode;
+  date?: string;
   defaultOpen?: boolean;
+  title: string;
 }
 
-export default function Accordion({ title, children, defaultOpen = false }: AccordionProps) {
+export default function Accordion({
+  children,
+  date = "",
+  defaultOpen = false,
+  title,
+}: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleAccordion = () => setIsOpen((v) => !v);
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden ">
+    <div className="rounded-2xl overflow-hidden">
       <button
         onClick={toggleAccordion}
-        className="w-full px-4 py-3 text-left bg-beige hover:bg-beige/80 flex items-center justify-between transition-colors"
+        className="w-full text-left"
         aria-expanded={isOpen}
       >
-        <span className="font-bold text-lg">{title}</span>
-        <svg
-          className={`w-5 h-5 transform transition-transform ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
+        <div className="flex items-center justify-between px-5 md:px-6 py-4 md:py-5 bg-green text-white">
+          <h3 className="text-lg md:text-xl font-semibold tracking-tight">
+            {title}
+          </h3>
+          <div className="flex items-center gap-3 text-base">
+            {date && <span className="opacity-95">{date}</span>}
+            <svg
+              className={`h-5 w-5 transition-transform ${
+                isOpen ? "rotate-180" : "rotate-0"
+              }`}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+        </div>
       </button>
-      
+
+      {/* Body card (dark) */}
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+        className={`transition-[max-height,opacity] duration-300 ease-in-out ${
+          isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-4 bg-cream">
+        <div className="bg-light-green/70 text-green px-5 md:px-6 py-5 md:py-6">
           {children}
         </div>
       </div>

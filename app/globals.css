@@ -5,6 +5,9 @@
   --color-beige: #E8DFCA;
   --color-blue: #6D94C5;
   --color-light-blue: #CBDCEB;
+  --color-light-green: #AFE1AF;
+  --color-green: #019863;
+  --color-light-bg: #f6f7f8,
   
 }
 
@@ -13,7 +16,7 @@ html {
 }
 
 body {
-  @apply bg-white text-slate-800 transition-colors;
+  @apply bg-light-bg text-slate-800 transition-colors;
   font-family: "Source Code Pro", monospace;
 }
 
