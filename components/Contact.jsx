@@ -6,7 +6,7 @@ export default function Contact() {
     <Section
       id="contact"
     >
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-8 md:text-4xl">
+      <h2 className="text-3xl font-bold text-center text-green mb-8 md:text-4xl">
         GET IN TOUCH
       </h2>
       <p className="text-lg muted text-center mb-8">
@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="flex justify-center gap-4">
         <a
           href="mailto:your-email@example.com"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-900 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-green text-white rounded-lg hover:bg-green/60 transition-colors"
         >
           Send Email
         </a>
@@ -24,7 +24,7 @@ export default function Contact() {
           href="/Hubert_Matras_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 text-blue-900 rounded-lg hover:bg-blue-50 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-green text-green rounded-lg hover:bg-green/60 hover:text-white transition-colors"
         >
           View CV
         </a>

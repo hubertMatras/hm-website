@@ -10,7 +10,7 @@ export default function Hero() {
           <br />
         </h1>
         <h1 className="text-3xl font-bold text-center lg:text-5xl">
-          <br />I am <span className="text-blue-600">HUBERT</span>
+          <br />I am <span className="text-green">HUBERT</span>
         </h1>
         <div className="mt-8 flex gap-4">
           <button
@@ -20,7 +20,7 @@ export default function Hero() {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
+            className="inline-flex items-center rounded-xl border-2 text-green border-green px-5 py-3 hover:bg-green/60 hover:text-white"
           >
             View My Work
           </button>
@@ -31,7 +31,7 @@ export default function Hero() {
                 element.scrollIntoView({ behavior: "smooth" });
               }
             }}
-            className="inline-flex items-center rounded-xl border-2 border-blue-600 px-5 py-3 hover:bg-slate-200"
+            className="inline-flex items-center rounded-xl border-2 text-green border-green px-5 py-3 hover:bg-green/60 hover:text-white"
           >
             Contact Me
           </button>

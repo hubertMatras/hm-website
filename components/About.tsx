@@ -8,7 +8,7 @@ export default function AboutMe() {
       id="about"
     >
       <div className="flex justify-center mb-12">
-        <h1 className="text-3xl font-bold text-center text-blue-900 md:text-4xl">
+        <h1 className="text-3xl font-bold text-center text-green md:text-4xl">
           ABOUT ME
         </h1>
       </div>
@@ -42,16 +42,16 @@ export default function AboutMe() {
           </p>
         </div>
         <aside className="md:top-24">
-          <div className="card rounded-2xl border p-5 shadow-sm">
-            <h3 className="font-bold text-2xl text-center text-blue-900">TECH STACK</h3>
+          <div className="card rounded-2xl p-5 shadow-sm">
+            <h3 className="font-bold text-2xl text-center text-green">TECH STACK</h3>
 
             <div className="mt-5">
-              <p className="text-lg font-bold">Proficient</p>
+              <p className="text-lg text-green font-bold">Proficient</p>
               <ul className="mt-2 flex flex-wrap gap-2">
                 {techStack.proficient.map((t) => (
                   <li
                     key={t}
-                    className="text-xs px-2 py-1 rounded-full border border-blue-500"
+                    className="text-xs px-2 py-1 rounded-full border border-green"
                   >
                     {t}
                   </li>
@@ -60,12 +60,12 @@ export default function AboutMe() {
             </div>
 
             <div className="mt-6">
-              <p className="text-lg font-bold">Worked With</p>
+              <p className="text-lg text-green font-bold">Worked With</p>
               <ul className="mt-2 flex flex-wrap gap-2">
                 {techStack.workedWith.map((t) => (
                   <li
                     key={t}
-                    className="text-xs px-2 py-1 rounded-full border border-blue-600"
+                    className="text-xs px-2 py-1 rounded-full border border-green"
                   >
                     {t}
                   </li>

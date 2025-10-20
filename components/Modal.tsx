@@ -47,7 +47,7 @@ export default function Modal({ isOpen, onClose, project }: ModalProps) {
         className="absolute inset-0 bg-black/70"
         onClick={onClose}
       />
-      <div className="relative bg-white rounded-lg max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-light-green/90 rounded-lg max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -84,8 +84,8 @@ export default function Modal({ isOpen, onClose, project }: ModalProps) {
         {/* Project Details */}
         <div className="p-6">
           <div className="mb-4">
-            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
-            <span className="inline-block px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full">
+            <h2 className="text-2xl text-green font-bold mb-2">{project.title}</h2>
+            <span className="inline-block px-3 py-1 text-sm bg-blue-100 text-green rounded-full">
               {project.tagline}
             </span>
           </div>
@@ -96,12 +96,12 @@ export default function Modal({ isOpen, onClose, project }: ModalProps) {
 
           {/* Tech Stack */}
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-3">Technologies Used</h3>
+            <h3 className="text-lg text-green font-semibold mb-3">Technologies Used</h3>
             <div className="flex flex-wrap gap-2">
               {project.tech.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1 text-sm bg-gray-100 text-gray-800 rounded-lg"
+                  className="px-3 py-1 text-sm bg-blue-100 text-green rounded-lg"
                 >
                   {tech}
                 </span>
@@ -126,7 +126,7 @@ export default function Modal({ isOpen, onClose, project }: ModalProps) {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-green text-white rounded-lg hover:bg-green/60 transition-colors"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
