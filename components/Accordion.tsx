@@ -29,7 +29,7 @@ export default function Accordion({
             {title}
           </h3>
           <div className="flex items-center gap-3 text-base">
-            {date && <span className="opacity-95">{date}</span>}
+            {date && <span className="opacity-95 hidden lg:inline">{date}</span>}
             <svg
               className={`h-5 w-5 transition-transform ${
                 isOpen ? "rotate-180" : "rotate-0"
@@ -53,7 +53,7 @@ export default function Accordion({
           isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-light-green/70 text-green px-5 md:px-6 py-5 md:py-6">
+        <div className="bg-light-green/30 text-green px-5 md:px-6 py-5 md:py-6">
           {children}
         </div>
       </div>
