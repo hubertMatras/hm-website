@@ -5,7 +5,7 @@ export const techStack = {
         "React",
         "Next.js",
         "OpenAI Models",
-        "OpenAI Assistant and Completions API",
+        "OpenAI API",
         "Octopus",
         "Concourse",
         "Git"
