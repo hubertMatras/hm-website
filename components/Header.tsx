@@ -59,8 +59,8 @@ export default function Header() {
           <Image
             src="/myLogo.png"
             alt="Logo"
-            width={32}
-            height={32}
+            width={40}
+            height={40}
             className="rounded-sm"
           />
         </Link>
