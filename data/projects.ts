@@ -16,7 +16,7 @@ export const projects = [
     tagline: "Web App",
     tech: ["React", "JavaScript", "CSS"],
     repo: "https://github.com/hubertMatras/tic-tac-toe",
-    image: "/ticTacToe.png",
+    image: "/tic-tac-toe.avif",
   },
   {
     title: "Mortgage Calculator",
@@ -25,6 +25,6 @@ export const projects = [
     tagline: "Web App",
     tech: ["React", "JavaScript", "CSS"],
     repo: "https://github.com/hubertMatras/mortgage-calculator",
-    image: "/mortgage.png",
+    image: "/bank.jpg",
   },
 ];
