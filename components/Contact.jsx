@@ -15,7 +15,7 @@ export default function Contact() {
       </p>
       <div className="flex justify-center gap-4">
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:contact.hmatras@gmail.com"
           className="inline-flex items-center gap-2 px-6 py-3 bg-green text-white rounded-lg hover:bg-green/60 transition-colors"
         >
           Send Email
