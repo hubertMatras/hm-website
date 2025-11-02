@@ -6,7 +6,7 @@ export const projects = [
     tagline: "Web Development",
     tech: ["Next.js", "TypeScript", "TailwindCSS"],
     repo: "https://github.com/hubertMatras/hm-website",
-    demo: "https://your-vercel-url.vercel.app",
+    demo: "https://hubertmatras.vercel.app/",
     image: "/og-image.png",
   },
   {

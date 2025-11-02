@@ -28,7 +28,9 @@ export default function AboutMe() {
           </div>
 
           <div className="mt-4 text-center">
-            <p className="text-sm font-semibold text-green">Software Engineer</p>
+            <p className="text-sm font-semibold text-green">
+              Software Engineer
+            </p>
             <p className="text-xs text-green/70">UI/UX • Fullstack</p>
           </div>
 
@@ -36,7 +38,9 @@ export default function AboutMe() {
 
           <ul className="grid grid-cols-2 gap-2 text-xs">
             <li className="rounded-lg border border-green/20 bg-white/60 px-3 py-2">
-              <span className="block font-semibold text-green">Design Systems</span>
+              <span className="block font-semibold text-green">
+                Design Systems
+              </span>
               <span className="text-green/70">Reusable UI at scale</span>
             </li>
             <li className="rounded-lg border border-green/20 bg-white/60 px-3 py-2">
@@ -55,10 +59,18 @@ export default function AboutMe() {
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="/Hubert_Matras_CV.pdf"
               className="inline-flex items-center gap-2 rounded-lg bg-green px-3 py-2 text-xs font-medium text-white hover:bg-green/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green"
             >
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M12 10v6m0 0l-3-3m3 3l3-3M6 20h12a2 2 0 0 0 2-2V7.4a1 1 0 0 0-.3-.7L14.3 2.3a1 1 0 0 0-.7-.3H6A2 2 0 0 0 4 4v14a2 2 0 0 0 2 2Z" />
               </svg>
               Resume
@@ -72,39 +84,48 @@ export default function AboutMe() {
           </div>
         </div>
 
-        <div className="space-y-4 leading-relaxed text-slate-800">
+        <div className="space-y-4 leading-relaxed">
           <p>
-            I’m a dedicated and creative Software Engineer with a degree in Computer Science from
-            Swansea University. My studies gave me a strong foundation in programming, software
-            design, and data-driven solutions.
+            I’m a dedicated and creative Software Engineer with a degree in
+            Computer Science from Swansea University. My studies gave me a
+            strong foundation in programming, software design, and data-driven
+            solutions.
           </p>
           <p>
-            Outside of work, I’m a passionate footballer and was fortunate to play at an academy
-            level and professionally in Poland’s top division before transitioning into tech.
+            Outside of work, I’m a passionate footballer and was fortunate to
+            play at an academy level and professionally in Poland’s top division
+            before transitioning into tech.
           </p>
           <p>
-            At Sky, I’ve gained hands-on experience across diverse teams. As part of the AI
-            development group, I explored real-world applications of machine learning and automation
-            at scale. More recently, I’ve contributed to a frontend-focused UX/UI team, honing my
-            ability to design and build intuitive, user-centred solutions for a fast-paced national
-            company.
+            At Sky, I’ve gained hands-on experience across diverse teams. As
+            part of the AI development group, I explored real-world applications
+            of machine learning and automation at scale. More recently, I’ve
+            contributed to a frontend-focused UX/UI team, honing my ability to
+            design and build intuitive, user-centred solutions for a fast-paced
+            national company.
           </p>
           <p>
-            These experiences have deepened my technical expertise and broadened my perspective
-            across multiple areas of technology. I’m eager to keep learning, stay at the forefront
-            of innovation, and contribute to impactful projects alongside talented professionals.
+            These experiences have deepened my technical expertise and broadened
+            my perspective across multiple areas of technology. I’m eager to
+            keep learning, stay at the forefront of innovation, and contribute
+            to impactful projects alongside talented professionals.
           </p>
 
-          <div className="rounded-xl border border-green/20 bg-light-green/40 p-4 text-sm text-green">
+          <div className="rounded-xl border border-green/20 bg-light-green/40 p-4 text-sm text-green dark:text-green-400">
             <p className="font-medium">
-              AI and Software Engineer passionate about creating intelligent, user-centred digital experiences. I blend machine learning innovation with thoughtful frontend design to deliver scalable, impactful solutions.
+              AI and Software Engineer passionate about creating intelligent,
+              user-centred digital experiences. I blend machine learning
+              innovation with thoughtful frontend design to deliver scalable,
+              impactful solutions.
             </p>
           </div>
         </div>
 
         {/* Tech stack */}
         <div className="rounded-2xl border border-green/20 bg-white/70 p-5">
-          <h3 className="text-center text-2xl font-bold text-green">TECH STACK</h3>
+          <h3 className="text-center text-2xl font-bold text-green">
+            TECH STACK
+          </h3>
 
           <div className="mt-5">
             <h4 className="text-sm font-semibold uppercase tracking-wide text-green/80">
@@ -134,7 +155,13 @@ export default function AboutMe() {
   );
 }
 
-function ChipList({ items, small = false }: { items: string[]; small?: boolean }) {
+function ChipList({
+  items,
+  small = false,
+}: {
+  items: string[];
+  small?: boolean;
+}) {
   return (
     <ul className="mt-2 flex flex-wrap gap-2">
       {items.map((t) => (

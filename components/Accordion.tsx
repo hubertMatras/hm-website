@@ -52,7 +52,7 @@ export default function Accordion({
           isOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-white/60 backdrop-blur-md text-background-dark px-5 md:px-6 py-5 md:py-6 border-t border-white/30">
+        <div className="bg-white/60 backdrop-blur-md text-background-dark px-5 md:px-6 py-5 md:py-6 border-t border-white/30 dark:text-green">
           {children}
         </div>
       </div>

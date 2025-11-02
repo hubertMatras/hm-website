@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header";
+import { ThemeProvider } from "../components/ThemeProvider";
+import { ThemeToggleButton } from "../components";
 
 export const metadata: Metadata = {
   title: {
@@ -36,12 +38,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
-        <div className="flex flex-col min-h-screen lg:h-screen">
-          <Header />
-          <main className="flex-1 md:overflow-hidden">
-            {children}
-          </main>
-        </div>
+        <ThemeProvider>
+          <div className="flex flex-col min-h-screen lg:h-screen">
+            <Header />
+            <main className="flex-1 md:overflow-hidden">
+              {children}
+            </main>
+          </div>
+          <ThemeToggleButton />
+        </ThemeProvider>
       </body>
     </html>
   );

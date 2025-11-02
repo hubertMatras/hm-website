@@ -23,14 +23,14 @@ export default function HomePage() {
   return (
     <div className="flex flex-col lg:flex-row lg:h-full">
       <div
-        className="pointer-events-none fixed inset-0 z-0 transition-opacity duration-300"
+        className="pointer-events-none fixed inset-0 z-0 transition-opacity duration-300 dark:opacity-50"
         style={{
           background: `radial-gradient(600px circle at ${mousePosition.positionX}px ${mousePosition.positionY}px, rgba(148, 163, 184, 0.5), transparent 90%)`,
         }}
       />
 
       <div
-        className="w-full flex items-center bg-light-green/60 min-h-[100vh] lg:w-[40%] lg:min-h-0 lg:h-full"
+        className="w-full flex items-center bg-light-green/60 dark:bg-slate-800/60 min-h-[100vh] lg:w-[40%] lg:min-h-0 lg:h-full transition-colors"
         id="home"
       >
         <Hero />
